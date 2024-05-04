@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<meta charset="utf8" />
+		<TITLE>FORMULAIRE-Complet</TITLE>
+		<style>
+			td.submit{text-align:center;} 
+			td.PartieGauche{width:60%;} 
+		</style> 
+	</HEAD>
+	<BODY>
+		<H1>Inscription</H1>
+		
+		<FORM method="post" action="action.php">
+			<TABLE >
+			<TR>
+			<TD class="PartieGauche">
+			Nom(*): <INPUT type="text" name="Nom">
+			<BR><BR>
+			Prenom(*): <INPUT type="text" name="Prenom">
+			<BR><BR>
+			Age : <INPUT type="number" name="Age">
+			<BR><BR>
+			Vous êtes : <INPUT type="radio" name="sexe" value="Homme">Homme
+		
+						<INPUT type="radio" name="sexe" value="Femme">Femme
+			<BR>
+			<BR>
+			Décrivez vous en une phrase:
+			<BR><BR>
+			<TEXTAREA rows=4 name="commentaire"></TEXTAREA>
+			</TD>
+			<TD>
+			Quelles langues saviez vous parler?
+			<BR><BR>
+			<INPUT type="checkbox" name="langues[0]" value="Français" />Français<BR><BR>
+			<INPUT type="checkbox" name="langues[1]" value="Anglais" />Anglais<BR><BR>
+			<INPUT type="checkbox" name="langues[2]" value="Allemand" />Allemand<BR><BR>
+			<INPUT type="checkbox" name="langues[3]" value="Espagnol" />Espagnol<BR><BR>
+			Votre langue natale
+			<SELECT name="langue">
+				<OPTION >Français</OPTION>
+				<OPTION >Arabe</OPTION>
+				<OPTION >Allemand</OPTION>
+				<OPTION >Anglais</OPTION>
+				<OPTION >Espagnol</OPTION>
+			</SELECT>
+			</TD>
+			</TR>
+			<TR>
+			<TD class="submit" colspan=2>
+			<INPUT type="submit" value="Envoyer">
+			</TD>
+			</TR>
+			</TABLE>
+			</FORM>
+	</BODY>
